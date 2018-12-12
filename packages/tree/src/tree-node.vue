@@ -1,5 +1,6 @@
 <template>
   <div
+    v-bind:id="node.guid"
     class="el-tree-node"
     @click.stop="handleClick"
     @contextmenu="($event) => this.handleContextMenu($event)"
